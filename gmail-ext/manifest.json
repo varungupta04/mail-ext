@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "My Email Categorizer",
+    "version": "1.0",
+    "description": "Categorize your email with ease",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "action": {
+      "default_icon": "icon16.png",
+      "default_title": "My Email Categorizer",
+      "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
