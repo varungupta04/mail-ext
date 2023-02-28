@@ -3,6 +3,11 @@
     "name": "My Email Categorizer",
     "version": "1.0",
     "description": "Categorize your email with ease",
+    "permissions": [
+    "https://mail.google.com/",
+    "identity",
+    "https://www.googleapis.com/auth/gmail.readonly"
+  ],
     "icons": {
       "16": "icon16.png",
       "48": "icon48.png",
@@ -16,7 +21,11 @@
     "permissions": ["activeTab"],
     "host_permissions": ["<all_urls>"],
     "background": {
-      "service_worker": "background.js"
-    }
+    "scripts": [
+      "background.js",
+      "https://apis.google.com/js/api.js"
+    ],
+    "persistent": false
+  }
   }
   
